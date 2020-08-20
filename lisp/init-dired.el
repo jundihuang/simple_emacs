@@ -14,3 +14,5 @@
     (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
 
 (provide 'init-dired)
+
+

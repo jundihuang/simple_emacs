@@ -8,3 +8,15 @@
 .DS_Store
 .#*
 *.last
+
+.agignore
+.dir-locals.el
+.emacs.desktop
+.github/*
+.session
+.smex-items
+.uptimes.el
+eshell/*
+projectile-bookmarks.eld
+smex-items
+transient/*

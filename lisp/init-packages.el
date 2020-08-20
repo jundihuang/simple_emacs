@@ -1,6 +1,6 @@
  (when (>= emacs-major-version 24)
      (require 'package)
-     (package-initialize)
+     ;;(package-initialize)
      (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
                       ("melpa" . "http://elpa.emacs-china.org/melpa/"))))
 
@@ -18,7 +18,9 @@
                 swiper
                 counsel
                 smooth-scrolling
-                ;; smex
+                ivy
+                ;;evil
+                smex
                 smartparens
                 popwin
                 expand-region
@@ -31,16 +33,47 @@
                 js2-mode
                 markdown-mode
                 web-mode
+                vue-mode
                 ;; --- Minor Mode ---
                 nodejs-repl
                 exec-path-from-shell
                 reveal-in-osx-finder
                 ;; --- Linter ---
-                flycheck		
+                flycheck
+                ;; --- Project ---
+                ;;projectile
+                helm-projectile
+                ;; Ruby
+                yari
+                rvm
+                bundler
+                inf-ruby
+                robe
+                rubocop
+                motion-mode
+                rinari
+                projectile-rails
+                rspec-mode
+                ;; frontend
+                vue-mode
+                ;; git
+                git-blamed
+                gitignore-mode
+                gitconfig-mode
+                magit
                 ;; --- Themes ---
                 monokai-theme
                 eziam-theme
+                color-theme-sanityinc-tomorrow
+                atom-one-dark-theme
+                plan9-theme
+                twilight-bright-theme
+                ;;color-theme-tomorrow
+                ;;color-theme-sanityinc-solarized
                 ;; solarized-theme
+                ;; --- UI ---
+                switch-window
+                windswap
                 ) "Default packages")
 
  (setq package-selected-packages my/packages)

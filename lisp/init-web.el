@@ -1,15 +1,34 @@
 ;; javascript IDE
 (setq auto-mode-alist
-      (append
-       '(("\\.js\\'" . js2-mode))
-       '(("\\.html\\'" . web-mode))
-       '(("\\.wxml\\'" . web-mode))
-       auto-mode-alist))
-	      
+      (append '(("\\.js\\'" . js2-mode)
+                ("\\.html\\'" . web-mode)
+                ("\\.wxml\\'" . web-mode)
+                ("\\.vue\\'" . vue-mode))
+              auto-mode-alist))
+
+;; (setq auto-mode-alist
+;;       (append '(("\\.foo\\'" . foo-mode)  note these are encapsulated in a '() list
+;;                 ("\\.bar\\'" . bar-mode))
+;;                    auto-mode-alist))
+;;(add-to-list 'auto-mode-alist '("\\.vue\\'" . vue-mode))
+
+;; vue mode
+(setq vue-mode-packages
+  '(vue-mode))
+
+(setq vue-mode-excluded-packages '())
+
+(defun vue-mode/init-vue-mode ()
+  (use-package vue-mode
+               :config
+               ;; 0, 1, or 2, representing (respectively) none, low, and high coloring
+               (setq mmm-submode-decoration-level 0)))
+
 ;; set indent
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
-(setq-default js2-basic-offset 2)
+(setq-default js-indent-level 2)
+
 
 (defun my-web-mode-indent-setup ()
   (setq web-mode-markup-indent-offset 2) ; web-mode, html tag in html file

@@ -19,6 +19,10 @@
 (require 'init-company)
 (require 'init-dired)
 (require 'init-edit)
+(require 'init-project)
+(require 'init-windows)
+(require 'init-ruby)
+;;(require 'init-osx-keys)
 
 ;; progromming
 (require 'init-web)

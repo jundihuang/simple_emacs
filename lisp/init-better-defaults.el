@@ -7,7 +7,7 @@
 (global-auto-revert-mode t)
 
 ;; 关闭行号
-(global-linum-mode -1)
+;;(global-linum-mode -1)
 
 ;; 关闭菜单栏
 (menu-bar-mode -1)

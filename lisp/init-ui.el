@@ -25,9 +25,10 @@
 (setq inhibit-splash-screen 1)
 
 ;; 设置字体大小
-(set-face-attribute 'default nil :height 150)
+(set-face-attribute 'default nil :height 120)
 
 ;; 主题
-(load-theme 'monokai t)
+;;(load-theme 'sanityinc-tomorrow-bright t)
+(load-theme 'atom-one-dark t)
 
 (provide 'init-ui)
