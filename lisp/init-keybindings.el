@@ -39,7 +39,7 @@
 (global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
 
 ;; smex
-(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-x") 'helm-smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
@@ -68,5 +68,12 @@
 (global-set-key (kbd "C-c m i") 'minimize-window)
 (global-set-key (kbd "C-c m b") 'balance-windows)
 
-(provide 'init-keybindings)
+;; 全局搜索
+(global-set-key (kbd "C-c f") 'helm-do-ag-project-root)
 
+(global-set-key (kbd "M-1") 'delete-other-windows)
+(global-set-key (kbd "M-2") 'split-window-below)
+(global-set-key (kbd "M-3") 'split-window-right)
+(global-set-key (kbd "M-0") 'delete-window)
+
+(provide 'init-keybindings)

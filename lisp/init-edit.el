@@ -41,6 +41,17 @@
 (global-set-key (kbd "C-c C-;") 'comment-or-uncomment-region)
 (global-set-key (kbd "C-;") 'comment-line)
 
+;; 保存去除多余空格
+(add-hook 'before-save-hook 'my-prog-nuke-trailing-whitespace)
 
+(defun my-prog-nuke-trailing-whitespace ()
+  (when (derived-mode-p 'prog-mode)
+    (delete-trailing-whitespace)))
+
+;; 自动在最后加入一行
+(setq require-final-newline t)
+
+;; 系统剪贴复制
+(setq x-select-enable-clipboard t)
 
 (provide 'init-edit)

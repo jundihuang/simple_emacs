@@ -5,7 +5,6 @@
 
 (global-hl-line-mode t)
 
-
 ;; 关闭工具栏， tool-bar-mode 即为一个 Minor Mode
 (tool-bar-mode -1)
 
@@ -27,8 +26,11 @@
 ;; 设置字体大小
 (set-face-attribute 'default nil :height 120)
 
+(setq organic-green-boldless t)
+
 ;; 主题
 ;;(load-theme 'sanityinc-tomorrow-bright t)
-(load-theme 'atom-one-dark t)
+;;(load-theme 'atom-one-dark t)
+(load-theme 'organic-green t)
 
 (provide 'init-ui)

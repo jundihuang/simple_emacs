@@ -30,7 +30,7 @@
 ;; 关闭自动保存文件
 (setq auto-save-default nil)
 
-(recentf-mode 1)			
+(recentf-mode 1)
 (setq recentf-max-menu-items 25)
 
 ;; 匹配括号

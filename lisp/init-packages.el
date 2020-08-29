@@ -20,7 +20,8 @@
                 smooth-scrolling
                 ivy
                 ;;evil
-                smex
+                ;;smex ;; 更好的 M-X
+                helm-smex
                 smartparens
                 popwin
                 expand-region
@@ -29,11 +30,14 @@
                 yasnippet
                 ;; --- Better Search ---
                 helm-ag
+                dumb-jump ;; 方法跳转
                 ;; --- Major Mode ---
                 js2-mode
                 markdown-mode
                 web-mode
                 vue-mode
+                yaml-mode
+
                 ;; --- Minor Mode ---
                 nodejs-repl
                 exec-path-from-shell
@@ -68,6 +72,8 @@
                 atom-one-dark-theme
                 plan9-theme
                 twilight-bright-theme
+                solarized-theme
+                organic-green-theme
                 ;;color-theme-tomorrow
                 ;;color-theme-sanityinc-solarized
                 ;; solarized-theme

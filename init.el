@@ -22,6 +22,7 @@
 (require 'init-project)
 (require 'init-windows)
 (require 'init-ruby)
+(require 'init-dumb-jump)
 ;;(require 'init-osx-keys)
 
 ;; progromming
@@ -30,10 +31,14 @@
 (require 'init-keybindings)
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 
+;; ignore cl waring
+(setq byte-compile-warnings '(cl-functions))
+
 ;; 快速打开配置文件
 (defun open-init-file()
   (interactive)
   (find-file "~/.emacs.d/init.el"))
+
 
 (recentf-mode 1)
 (setq recentf-max-menu-item 10)
