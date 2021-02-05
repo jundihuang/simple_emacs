@@ -28,9 +28,16 @@
 
 (setq organic-green-boldless t)
 
+;; 单行超过80个字符高亮
+(setq whitespace-line-column 80)
+(setq whitespace-style '(face lines-tail))
+
+(add-hook 'prog-mode-hook 'whitespace-mode)
+
+
 ;; 主题
 ;;(load-theme 'sanityinc-tomorrow-bright t)
-;;(load-theme 'atom-one-dark t)
-(load-theme 'organic-green t)
+(load-theme 'atom-one-dark t)
+;;(load-theme 'organic-green t)
 
 (provide 'init-ui)
